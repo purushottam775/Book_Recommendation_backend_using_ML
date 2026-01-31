@@ -5,7 +5,7 @@ import os
 book_assistant_routes = Blueprint('book_assistant', __name__)
 
 # Initialize Gemini service with API key
-GEMINI_API_KEY = "AIzaSyDgxQNnsxs35NorPl78EM-jlRy-QRmDJeo"
+GEMINI_API_KEY = "your_gemini_api_key"
 gemini_service = GeminiService(GEMINI_API_KEY)
 
 @book_assistant_routes.route('/book-assistant', methods=['POST'])
